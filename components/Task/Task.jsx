@@ -14,7 +14,7 @@ const Task = (props) => {
                         setState(!state);
                     }} />
                 </View>
-                <TouchableOpacity style={styles.contentContainer}>
+                <TouchableOpacity style={styles.contentContainer} onPress={() => props.handlePressTask(props.indexTask)}>
                     <Text>{task.title}</Text>
                 </TouchableOpacity>
             </View>

@@ -16,7 +16,7 @@ const HomeScreen = (props) => {
                 <ScrollView style={styles.taskContainer}>
                     {allTask.map((task, index) => {
                         return (
-                            <Task key={index} task={task} indexTask={index} checkTask={props.checkTask} />
+                            <Task key={index} task={task} indexTask={index} checkTask={props.checkTask} handlePressTask={props.handlePressTask} />
                         )
                     })}
                 </ScrollView>
